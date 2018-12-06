@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*Route::group(['prefix' => 'team'], function (){
+    Route::get('')
+});*/
+
+Route::resource('team', 'TeamController');
